@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <title>たろんのWeb制作</title>
   </head>
   <body>
-    <header>
+    <header class="sticky-top bg-transparent">
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">たろんのWeb制作</a>
@@ -36,45 +36,45 @@
 
 
 
-    <div class="container-fluid mt-3" id="profile">
+    <div class="container-fluid mt-5" id="profile">
       <div class="row">
         <div class="col-md-8">
           <h1 class="">プロフィール</h1>
           <p>どこにでもいる会社員。</p>
-          <p>現在、個人の力で稼ぐ記録をツイッターで発信中。</p>
+          <p>Web制作を現在勉強中</p>
         </div>
-        <div class="col-md-4 p-auto">
-            <a class="twitter-timeline" data-height="250" data-width="400" href="https://twitter.com/taron_123123?ref_src=twsrc%5Etfw">たろんのつぶやき taron_123123</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="col-md-4 d-flex justify-content-center">
+          <a class="twitter-timeline" data-height="250" data-width="400" href="https://twitter.com/taron_123123?ref_src=twsrc%5Etfw">たろんのつぶやき taron_123123</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        </p>
       </div>
     </div>
 
-    <div class="container-fluid mt-3" id="work">
+    <div class="container-fluid mt-5" id="work">
       <div class="row">
         <div class="col-md-8">
           <h1 class="">実績</h1>
-          <p>どこにでもいる会社員。</p>
-          <p>現在、個人の力で稼ぐ記録をツイッターで発信中。</p>
+          <p>実績をここに記載する。</p>
+          <p>実績をここに記載する。</p>
+          <p>実績をここに記載する。</p>
+          <p>実績をここに記載する。</p>
+          <p>実績をここに記載する。</p>
         </div>
-        <div class="col-md-4 p-auto">
-            <a class="twitter-timeline" data-height="250" data-width="400" href="https://twitter.com/taron_123123?ref_src=twsrc%5Etfw">たろんのつぶやき taron_123123</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        </p>
+        <div class="col-md-4 d-flex justify-content-center">dddddd</div>
       </div>
     </div>
 
-    <div class="container-fluid mt-3" id="blog">
+    <div class="container-fluid mt-5" id="blog">
       <div class="row">
         <div class="col-md-8">
           <h1 class="">ブログ</h1>
-          <p>どこにでもいる会社員。</p>
-          <p>現在、個人の力で稼ぐ記録をツイッターで発信中。</p>
+          <p>ブログ構築予定</p>
+          <p>ブログ構築予定</p>
+          <p>ブログ構築予定</p>
+          <p>ブログ構築予定</p>
+          <p>ブログ構築予定</p>
+          <p>ブログ構築予定</p>
         </div>
-        <div class="col-md-4 p-auto">
-            <a class="twitter-timeline" data-height="250" data-width="400" href="https://twitter.com/taron_123123?ref_src=twsrc%5Etfw">たろんのつぶやき taron_123123</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        </p>
+        <div class="col-md-4 d-flex justify-content-center">EEEEE</div>
       </div>
     </div>
 
@@ -86,6 +86,22 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+      {
+        
+        let elements = document.getElementsByClassName( "nav-link" );
+        Array.prototype.forEach.call(elements, function (element) {
+            
+            element.addEventListener('click', function() {
+              Array.prototype.forEach.call(elements, function (element) {
+                element.classList.remove("active");
+              });
+              element.classList.add("active");
+            }, false);
+        });
+      }
+    </script>
 
   </body>
 </html>
